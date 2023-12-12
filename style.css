@@ -1,0 +1,132 @@
+body{
+    background: #ffac00;
+}
+@font-face {
+    font-family: "SFpdb";
+    src: url("SFProDisplay-Medium.ttf");
+}
+@font-face {
+    font-family: "SFProDisplayLight";
+    src: url("FontsFree-Net-SFProDisplay-Light.ttf");
+  }
+.board-container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    min-height: 70vh;
+    max-width: 60vw;
+    background-color: #ffac00;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: "SFpdb"; 
+    margin-bottom: 0%;
+}
+.author{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "SFProDisplayLight";
+}
+#initialBoard{
+    display:none;
+}
+.show-input #initialBoard {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+}
+.row{
+    display: flex;
+    font-display: row;
+}
+.invalid{
+    display: none;
+}
+.show-invalid .invalid{
+    font-family: "SFProDisplayLight";
+    display: block;
+    align-self: center;
+}
+#answerBoard {
+    display: none;
+    min-width: 400px;
+    min-height: 400px;
+    background: url("bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.show-answer #answerBoard{
+    display: block;
+}
+p{
+    font-size: 20px;
+}
+input{
+    font-size: 15px;
+    /* margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px; */
+    /* border-radius: 5px; */
+    border: 1px solid rgb(37, 37, 37);
+    width: 40px;
+    height: 40px;
+    color: #c5183b;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+}
+.arow{
+    padding: 2px;
+    font-size: 17px;
+    color: #c5183b;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    width: 100px;
+    height: 40px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 26px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    background-color: #c5183b;
+    color: white;
+    border-style: none;
+    margin: 0px 20px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.5);
+    transform: translateY(4px);
+}
+.button-container{
+    margin-top: 20px;
+    min-width: fit-content;
+    max-width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+#solve-button{
+    font-size: 10px;
+}
+.author{
+    font-size: 17px;
+}
